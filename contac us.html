@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/Estilos.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='./css/menu.css'>
+        <!--<script src='main.js'></script>-->
+    </head>
+    <body>
+        <nav id="menu">
+            <ul class="menu">
+                <li class="logo"> 
+                    <a href="#"> 
+                        <img src="./imagenes/fotobc.png">
+                    </a>
+                </li>
+                    <li> <a href="./index.html"> Inicio </a></li>
+                    <li> <a href="./contac us.html"> Contactenos </a></li>
+                <!-- Cambios3 - Profe ya pude modificar el menu despegable me faltaba el id gracias-->
+                <li>
+                    <a href="#"> Tipo de Contacto </a>
+                    <!--aqui hago un nuevo menu despegable y cambios-2-->
+                    <ul>
+                        <li> <a href="#"> Facebook </a></li>
+                        <li> <a href="#"> Instagram </a></li>
+                        <li> <a href="#"> Twitter </a></li>
+                        <li> <a href="#"> LinkIn </a></li>
+                    </ul>
+                    <!--aqui terminan los cambios4 del menu despegable-->
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1> FINTECH BUSINESS ENTREPRENEUR </h1>
+           
+            <!--aqui incia el formulario-->
+            <div>
+                <form method="post">
+                    <div class="section-flex">
+
+
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="type"> Tipo de mensaje </label>
+                            </div>
+                            <select id="type1" name="type1">
+                                <option value=""> Seleccione una opcion </option>
+                                <option value="cotizacion1"> Cotizacion </option>
+                                <option value="saludo1"> Saludo </option>
+                                <option value="queja1"> Queja </option>
+                            </select>
+                        </div>
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="type"> Nombre </label>
+                            </div>
+                            <input type="text" id="name" name="name" placeholder="Ingrese su nombre"> 
+                        </div>
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="email"> Email </label>
+                            </div>
+                            <input type="text" id="email" name="email" placeholder="example@mail.com"> 
+                        </div>
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="cel phone"> Cel phone </label>
+                            </div>
+                            <input type="text" id="celphone" name="celphone" placeholder="number cel phone"> 
+                        </div>
+                        <div class="element-flex">
+                            <div class="label">
+                                <label for="coment"> Comentario </label>
+                            </div>
+                            <textarea 
+                                id="coment" name="coment" placeholder="ingrese su comentario" required>
+                            </textarea>
+                        </div>
+
+                        
+                        <div>
+
+                            <div>
+                                <label> Elija una o varias opciones </label>
+                            </div>  
+                            <div class="element-form"> 
+                                <input type="checkbox" id="checkA" name="checkA" value="opcionA"> opcionA
+                                <input type="checkbox" id="checkB" name="checkB" value="opcionB"> opcionB
+                                <input type="checkbox" id="checkC" name="checkC" value="opcionC"> opcionC                                                                                                                               
+                            </div> 
+                        
+                            <div>
+                                <div>
+                                     <label> Elija solo una opcion </label>
+                                </div>
+                                <div class="element-form">
+                                    <input type="radio" id="radioA" name="radio" value="opcionA"> opcionA
+                                    <input type="radio" id="radioB" name="radio" value="opcionB"> opcionB
+                                    <input type="radio" id="radioC" name="radio" value="opcionC"> opcionC
+                                </div>
+                            </div>
+                                                               
+                        </div>  
+
+                        <div class="boton1">
+                            <button type="submit" onclick="validacionjs()"> Enviar Datos </button>
+                        </div>                  
+                                                
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <footer> 
+            <p>hecho en Colombia - by Jonnathan</p>
+        </footer>
+
+
+        <script src="./js/JavaScript.js"></script>
+    </body>
+</html>
